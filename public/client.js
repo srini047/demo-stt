@@ -64,7 +64,7 @@ async function start(socket) {
 
 // Establish socket connection with server
 window.addEventListener("load", () => {
-  const socket = new WebSocket("ws://localhost:8000");
+  const socket = new WebSocket("wss://localhost:8000");
 
   socket.addEventListener("open", async () => {
     console.log("WebSocket connection opened");
